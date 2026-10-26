@@ -12,3 +12,4 @@ Nuxt 4 · Nuxt UI · Drizzle ORM · Better Auth · @nuxtjs/i18n · @nuxtjs/seo
 - [ ] Cart and cash-on-delivery checkout
 - [ ] Admin panel (orders, products, stock)
 - [ ] Online payments and shipping
+# MeNow
