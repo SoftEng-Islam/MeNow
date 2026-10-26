@@ -1,75 +1,14 @@
-# Nuxt Minimal Starter
+# MeNow
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Online shoe store built with Nuxt 4, Nuxt UI, and Cloudflare (Workers, D1, R2).
 
-## Setup
+## Stack
 
-Make sure to install dependencies:
+Nuxt 4 · Nuxt UI · Drizzle ORM · Better Auth · @nuxtjs/i18n · @nuxtjs/seo
 
-```bash
-# npm
-npm install
+## Roadmap
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [ ] Catalog and product pages
+- [ ] Cart and cash-on-delivery checkout
+- [ ] Admin panel (orders, products, stock)
+- [ ] Online payments and shipping
