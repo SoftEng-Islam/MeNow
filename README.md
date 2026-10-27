@@ -1,6 +1,6 @@
 # MeNow
 
-![Cat footprint](./cat-footprint-scarlet-gold.svg)
+![Cat footprint](./cat-footprint-yellow-black.svg)
 Online shoe store built with Nuxt 4, Nuxt UI, and Cloudflare (Workers, D1, R2).
 
 ## Stack
