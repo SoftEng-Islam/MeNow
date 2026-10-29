@@ -2,6 +2,14 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+	routeRules: {
+		"/": { prerender: true },
+		"/products/**": { swr: true },
+		"/blog/**": { isr: true },
+		"/admin/**": { ssr: false },
+		"/api/**": { cors: true },
+		"/old-page": { redirect: "/new-page" },
+	},
 	modules: [
 		"@nuxt/eslint",
 		"@nuxt/fonts",
