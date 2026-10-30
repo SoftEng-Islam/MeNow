@@ -2,6 +2,7 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   vue-demi: true
+
 minimumReleaseAgeExclude:
   - '@better-auth/core@1.7.13'
   - '@better-auth/drizzle-adapter@1.7.13'
@@ -12,3 +13,8 @@ minimumReleaseAgeExclude:
   - '@better-auth/telemetry@1.7.13'
   - '@nuxtjs/better-auth@0.3.13'
   - better-auth@1.7.13
+
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver
+  - vue-demi

@@ -94,13 +94,16 @@ export default defineNuxtConfig({
 	},
 	shadcn: {
 		/**
-		 * Prefix for all the imported component
+		 * Prefix for all the imported component.
+		 * @default "Ui"
 		 */
 		prefix: "",
 		/**
 		 * Directory that the component lives in.
-		 * @default "./components/ui"
+		 * Will respect the Nuxt aliases.
+		 * @link https://nuxt.com/docs/api/nuxt-config#alias
+		 * @default "@/components/ui"
 		 */
-		componentDir: "./components/ui",
+		componentDir: "@/components/ui",
 	},
 });
