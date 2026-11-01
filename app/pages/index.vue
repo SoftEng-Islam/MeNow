@@ -58,11 +58,12 @@ const invoices = [
 
 <template>
 	<NavBar />
+	<div class="bg-green-400 h-2 w-full"></div>
 	<Table>
 		<TableCaption>A list of your recent invoices.</TableCaption>
 		<TableHeader>
 			<TableRow>
-				<TableHead class="w-[100px]">
+				<TableHead class="w-25">
 					Invoice
 				</TableHead>
 				<TableHead>Status</TableHead>

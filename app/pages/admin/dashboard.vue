@@ -4,7 +4,7 @@ definePageMeta({
 })
 </script>
 <template>
-	<div class="bg-slate-200 auth-layout">
+	<div class="bg-accent">
 		Admin Dashboard
 	</div>
 </template>

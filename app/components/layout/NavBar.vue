@@ -57,7 +57,7 @@ const components: { title: string, href: string, description: string }[] = [
 			<NavigationMenuItem>
 				<NavigationMenuTrigger>Home</NavigationMenuTrigger>
 				<NavigationMenuContent>
-					<ul class="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+					<ul class="grid gap-2 md:w-100 lg:w-125 lg:grid-cols-[.75fr_1fr]">
 						<li class="row-span-3">
 							<NavigationMenuLink as-child>
 								<a class="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md" href="/">
