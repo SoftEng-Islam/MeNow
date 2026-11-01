@@ -11,5 +11,6 @@
 		"statusBar.debuggingForeground": "#FCF9FC",
 		"statusBar.noFolderBackground": "#3E253D",
 		"statusBar.noFolderForeground": "#FCF9FC"
-	}
+	},
+	"nixEnvSelector.suggestion": false
 }
