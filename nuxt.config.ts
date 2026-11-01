@@ -2,14 +2,6 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-	routeRules: {
-		"/": { prerender: true },
-		"/products/**": { swr: 3600, cache: { varies: ["accept"] } },
-		"/blog/**": { isr: false },
-		"/admin/**": { ssr: false, robots: false },
-		"/api/**": { cors: true },
-		"/old-page": { redirect: "/new-page" },
-	},
 	modules: [
 		"@nuxt/eslint",
 		"@nuxt/fonts",
@@ -24,17 +16,12 @@ export default defineNuxtConfig({
 		"@vueuse/nuxt",
 		"shadcn-nuxt",
 	],
-	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	colorMode: {
-		preference: "dark",
-		classSuffix: "",
-	},
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 		baseURL: process.env.NUXT_APP_BASE_URL || "/",
 	},
-	css: ["~/assets/css/main.css", "~/assets/css/tailwind.css"],
+	css: ["~/assets/css/main.css"],
 	site: {
 		url: process.env.NUXT_PUBLIC_SITE_URL || "https://openquery.dev",
 		name: "OpenQuery",
@@ -43,6 +30,19 @@ export default defineNuxtConfig({
 		defaultLocale: "en",
 		trailingSlash: true,
 	},
+	colorMode: {
+		preference: "dark",
+		classSuffix: "",
+	},
+	routeRules: {
+		"/": { prerender: true },
+		"/products/**": { swr: 3600, cache: { varies: ["accept"] } },
+		"/blog/**": { isr: false },
+		"/admin/**": { ssr: false, robots: false },
+		"/api/**": { cors: true },
+		"/old-page": { redirect: "/new-page" },
+	},
+	compatibilityDate: "2025-07-15",
 	vite: {
 		plugins: [tailwindcss()],
 		optimizeDeps: {

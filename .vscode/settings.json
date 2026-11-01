@@ -12,5 +12,13 @@
 		"statusBar.noFolderBackground": "#3E253D",
 		"statusBar.noFolderForeground": "#FCF9FC"
 	},
-	"nixEnvSelector.suggestion": false
+	"nixEnvSelector.suggestion": false,
+	"cSpell.words": [
+		"nuxtjs",
+		"reka",
+		"shadcn",
+		"unhead",
+		"vueuse",
+		"العربية"
+	]
 }
