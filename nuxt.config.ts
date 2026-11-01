@@ -4,9 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	routeRules: {
 		"/": { prerender: true },
-		"/products/**": { swr: true },
-		"/blog/**": { isr: true },
-		"/admin/**": { ssr: false },
+		"/products/**": { swr: 3600, cache: { varies: ["accept"] } },
+		"/blog/**": { isr: false },
+		"/admin/**": { ssr: false, robots: false },
 		"/api/**": { cors: true },
 		"/old-page": { redirect: "/new-page" },
 	},
@@ -21,17 +21,20 @@ export default defineNuxtConfig({
 		"@nuxtjs/color-mode",
 		"@nuxtjs/i18n",
 		"@nuxtjs/seo",
-		"@nuxtjs/svg-sprite",
 		"@vueuse/nuxt",
 		"shadcn-nuxt",
 	],
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
+	colorMode: {
+		preference: "dark",
+		classSuffix: "",
+	},
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 		baseURL: process.env.NUXT_APP_BASE_URL || "/",
 	},
-	css: ["~/assets/css/main.css"],
+	css: ["~/assets/css/main.css", "~/assets/css/tailwind.css"],
 	site: {
 		url: process.env.NUXT_PUBLIC_SITE_URL || "https://openquery.dev",
 		name: "OpenQuery",
@@ -43,7 +46,7 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		optimizeDeps: {
-			include: ["@unhead/schema-org/vue"],
+			include: ["@unhead/schema-org/vue", "lucide-vue-next"],
 		},
 	},
 	eslint: {
@@ -71,14 +74,20 @@ export default defineNuxtConfig({
 				"latin",
 			],
 		},
-		experimental: {
-			processCSSVariables: true,
-		},
+		processCSSVariables: true,
 		families: [
-			// Automatically resolved if @fontsource/roboto is in your package.json
-			{ name: "Roboto", provider: "npm" },
-			// Variable fonts are also supported
-			{ name: "Inter Variable", provider: "npm" },
+			{
+				name: "Karla",
+				provider: "npm",
+				global: true,
+				weights: [400, 700],
+			},
+			{
+				name: "Inter",
+				provider: "npm",
+				global: true,
+				weights: [400, 700],
+			},
 		],
 	},
 	i18n: {
