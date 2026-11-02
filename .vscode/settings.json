@@ -1,17 +1,29 @@
 {
 	"workbench.colorCustomizations": {
-		"activityBar.background": "#3E253D",
-		"titleBar.activeBackground": "#573356",
-		"titleBar.activeForeground": "#FCF9FC",
-		"titleBar.inactiveBackground": "#3E253D",
-		"titleBar.inactiveForeground": "#FCF9FC",
-		"statusBar.background": "#3E253D",
-		"statusBar.foreground": "#FCF9FC",
-		"statusBar.debuggingBackground": "#3E253D",
-		"statusBar.debuggingForeground": "#FCF9FC",
-		"statusBar.noFolderBackground": "#3E253D",
-		"statusBar.noFolderForeground": "#FCF9FC"
+		"activityBar.background": "#1E1E5C",
+		"titleBar.activeBackground": "#2A2A81",
+		"titleBar.activeForeground": "#FCFCFE",
+		"titleBar.inactiveBackground": "#1E1E5C",
+		"titleBar.inactiveForeground": "#FCFCFE",
+		"statusBar.background": "#1E1E5C",
+		"statusBar.foreground": "#FCFCFE",
+		"statusBar.debuggingBackground": "#1E1E5C",
+		"statusBar.debuggingForeground": "#FCFCFE",
+		"statusBar.noFolderBackground": "#1E1E5C",
+		"statusBar.noFolderForeground": "#FCFCFE"
 	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"eslint.useFlatConfig": true,
 	"nixEnvSelector.suggestion": false,
 	"cSpell.words": [
 		"nuxtjs",

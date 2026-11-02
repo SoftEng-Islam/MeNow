@@ -51,12 +51,7 @@ export default defineNuxtConfig({
 	},
 	eslint: {
 		config: {
-			stylistic: {
-				semi: true,
-				quotes: "double",
-				commaDangle: "always-multiline",
-				indent: "tab",
-			},
+			stylistic: false,
 		},
 	},
 	// This configuration tells the module not to reach out to the internet
