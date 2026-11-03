@@ -8,7 +8,6 @@ export default defineNuxtConfig({
 		"@nuxt/hints",
 		"@nuxt/icon",
 		"@nuxt/image",
-		"@nuxt/ui",
 		"@nuxtjs/better-auth",
 		"@nuxtjs/color-mode",
 		"@nuxtjs/i18n",
@@ -34,6 +33,9 @@ export default defineNuxtConfig({
 		preference: "dark",
 		classSuffix: "",
 	},
+	icon: {
+		serverBundle: false,
+	},
 	routeRules: {
 		"/": { prerender: true },
 		"/products/**": { swr: 3600, cache: { varies: ["accept"] } },
@@ -46,7 +48,7 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		optimizeDeps: {
-			include: ["@unhead/schema-org/vue", "lucide-vue-next"],
+			include: ["@unhead/schema-org/vue"],
 		},
 	},
 	eslint: {
