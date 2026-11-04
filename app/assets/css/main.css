@@ -1,4 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @import "./tailwind.css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 * {
 	box-sizing: border-box;
@@ -10,4 +16,17 @@ html {
 
 ::selection {
 	@apply bg-emerald-500/40 text-white;
+}
+
+@theme inline {
+	--font-heading: var(--font-sans);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+	}
+  body {
+    @apply bg-background text-foreground;
+	}
 }
