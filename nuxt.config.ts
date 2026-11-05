@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { fileURLToPath } from "node:url";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
@@ -19,6 +21,9 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 		baseURL: process.env.NUXT_APP_BASE_URL || "/",
+	},
+	alias: {
+		"@lib": fileURLToPath(new URL("./lib", import.meta.url)),
 	},
 	css: ["~/assets/css/main.css"],
 	site: {
