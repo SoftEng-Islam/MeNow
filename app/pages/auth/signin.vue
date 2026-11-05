@@ -101,7 +101,7 @@ async function onSubmit() {
 					<p class="text-sm text-muted-foreground">
 						New here?
 						<NuxtLink
-							to="/register"
+							to="/auth/signup"
 							class="font-medium text-foreground underline-offset-4 hover:underline"
 						>
 							Create an account
@@ -199,7 +199,7 @@ async function onSubmit() {
 						<div class="flex items-center justify-between">
 							<Label for="password">Password</Label>
 							<NuxtLink
-								to="/forgot-password"
+								to="/auth/forgot-password"
 								class="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
 							>
 								Forgot password?
